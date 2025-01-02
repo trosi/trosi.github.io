@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="leading-relaxed text-base mx-auto mt-2 w-11/12 sm:w-2/3 sm:max-w-lg font-sans bg-slate-900 text-slate-50 no-underline">
+
+<head>
+  <meta charset="utf-8">
+  
+<title>MathJax Support | Tommaso Rosi</title>
+
+  <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/typography.css">
+  <link rel="stylesheet" href="/foundation.min.css">
+  <script src="/highlight.min.js"></script>
+  <script defer>hljs.highlightAll();</script>
+</head>
+
+<div class="flex items-start border-slate-50">
+  <a href="/">
+    <div class="rounded-full">
+      <img class="rounded-full" width="60" height="auto" src="&#x2F;images&#x2F;logo.png" alt="Tommaso Rosi">
+    </div>
+  </a>
+  <div class="ml-auto">
+    <a class="no-underline text-slate-50" href="/">Tommaso Rosi</a>
+  </div>
+</div>
+<div class="flex justify-end">
+  <a class="flex items-start text-slate-50" href="/about">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+      <path fill-rule="evenodd"
+        d="M10 18a8 8 0 100-16 8 8 0 000 16zM6.75 9.25a.75.75 0 000 1.5h4.59l-2.1 1.95a.75.75 0 001.02 1.1l3.5-3.25a.75.75 0 000-1.1l-3.5-3.25a.75.75 0 10-1.02 1.1l2.1 1.95H6.75z"
+        clip-rule="evenodd" />
+    </svg>
+    about</a>
+</div>
+<hr class="border-amber-200" />
+
+<body onload="getTheme()">
+  <section>
+    <div>
+      
+<p>
+  <div class="text-3xl">MathJax Support</div>
+</p>
+<p>
+  <div class="text-sm mb-2 text-right">2021-01-03</div>
+  <div class="text-right">
+  
+      
+      &ensp;<a class="text-slate-50" href="https://trosi.github.io/categories/math/">/math</a>
+      
+  
+  
+      
+      &ensp;<a class="text-slate-50" href="https://trosi.github.io/tags/euler-s-identity/">#Euler&#x27;s identity</a>
+      
+  
+  </div>
+</p>
+
+<p>
+  <p><strong>Please add the following lines in the front matter when using MathJax.</strong></p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>[extra]
+</span><span>math = true
+</span></code></pre>
+<hr />
+<h4 id="euler-s-identity">Euler's identity</h4>
+<p>$e^{i\pi }+1=0$</p>
+<h4 id="geometric-interpretation">Geometric interpretation</h4>
+<p>Any complex number $z=x+iy$ can be represented by the point $(x,y)$ on the complex plane. This point can also be represented in polar coordinates as $(r,\theta )$, where $r$ is the absolute value of $z$ (distance from the origin), and $\theta$  is the argument of $z$ (angle counterclockwise from the positive x-axis). By the definitions of sine and cosine, this point has cartesian coordinates of $(r\cos \theta ,r\sin \theta )$, implying that $z=r(\cos \theta +i\sin \theta )$. According to Euler's formula, this is equivalent to saying $z=re^{i\theta}$.</p>
+<p>Euler's identity says that $-1=e^{i\pi }$. Since $e^{i\pi }$ is $re^{i\theta }$ for $r$ = 1 and $\theta =\pi$ , this can be interpreted as a fact about the number −1 on the complex plane: its distance from the origin is 1, and its angle from the positive x-axis is $\pi$ radians.</p>
+<p><a rel="noopener" target="_blank" href="https://en.wikipedia.org/wiki/Euler%27s_identity">Euler's identity - Wikipedia</a></p>
+
+</p>
+<hr class="mb-4 border-amber-200" />
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+</script>
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+    </div>
+  </section>
+</body>
+
+<div class="flex justify-end my-4">
+  <div class="flex flex-col">
+    <div><a class="underline text-slate-50" href="/">Tommaso Rosi</a>&ensp;&copy; author name
+    </div>
+    <div>powered by <a class="text-slate-50" href="https://www.getzola.org/">zola</a>, theme <a class="text-slate-50"
+        href="https://github.com/kyoheiu/emily_zola_theme">emily</a></div>
+  </div>
+</div>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="leading-relaxed text-base mx-auto mt-2 w-11/12 sm:w-2/3 sm:max-w-lg font-sans bg-slate-900 text-slate-50 no-underline">
+
+<head>
+  <meta charset="utf-8">
+  
+<title>Markdown Syntax Guide | Tommaso Rosi</title>
+
+  <link rel="shortcut icon" type="image/png" href="&#x2F;images&#x2F;favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="/typography.css">
+  <link rel="stylesheet" href="/foundation.min.css">
+  <script src="/highlight.min.js"></script>
+  <script defer>hljs.highlightAll();</script>
+</head>
+
+<div class="flex items-start border-slate-50">
+  <a href="/">
+    <div class="rounded-full">
+      <img class="rounded-full" width="60" height="auto" src="&#x2F;images&#x2F;logo.png" alt="Tommaso Rosi">
+    </div>
+  </a>
+  <div class="ml-auto">
+    <a class="no-underline text-slate-50" href="/">Tommaso Rosi</a>
+  </div>
+</div>
+<div class="flex justify-end">
+  <a class="flex items-start text-slate-50" href="/about">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+      <path fill-rule="evenodd"
+        d="M10 18a8 8 0 100-16 8 8 0 000 16zM6.75 9.25a.75.75 0 000 1.5h4.59l-2.1 1.95a.75.75 0 001.02 1.1l3.5-3.25a.75.75 0 000-1.1l-3.5-3.25a.75.75 0 10-1.02 1.1l2.1 1.95H6.75z"
+        clip-rule="evenodd" />
+    </svg>
+    about</a>
+</div>
+<hr class="border-amber-200" />
+
+<body onload="getTheme()">
+  <section>
+    <div>
+      
+<p>
+  <div class="text-3xl">Markdown Syntax Guide</div>
+</p>
+<p>
+  <div class="text-sm mb-2 text-right">2021-01-02</div>
+  <div class="text-right">
+  
+      
+      &ensp;<a class="text-slate-50" href="https://trosi.github.io/categories/code/">/code</a>
+      
+  
+  
+      
+      &ensp;<a class="text-slate-50" href="https://trosi.github.io/tags/markdown/">#markdown</a>
+      
+  
+  </div>
+</p>
+
+<p>
+  <h3 id="headings">Headings</h3>
+<p>The following HTML <code>&lt;h1&gt;—&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+<h3 id="paragraph">Paragraph</h3>
+<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>
+<h3 id="blockquotes">Blockquotes</h3>
+<blockquote>
+<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur?</p>
+</blockquote>
+<h3 id="code">Code</h3>
+<p><code>inline code block</code></p>
+<pre data-lang="rust" style="background-color:#2b303b;color:#c0c5ce;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#b48ead;">use </span><span>std::io;
+</span><span>
+</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">main</span><span>() {
+</span><span>    println!(&quot;</span><span style="color:#a3be8c;">Guess the number!</span><span>&quot;);
+</span><span>
+</span><span>    println!(&quot;</span><span style="color:#a3be8c;">Please input your guess.</span><span>&quot;);
+</span><span>
+</span><span>    </span><span style="color:#b48ead;">let mut</span><span> guess = String::new();
+</span><span>
+</span><span>    io::stdin()
+</span><span>        .</span><span style="color:#96b5b4;">read_line</span><span>(&amp;</span><span style="color:#b48ead;">mut</span><span> guess)
+</span><span>        .</span><span style="color:#96b5b4;">expect</span><span>(&quot;</span><span style="color:#a3be8c;">Failed to read line</span><span>&quot;);
+</span><span>
+</span><span>    println!(&quot;</span><span style="color:#a3be8c;">You guessed: </span><span style="color:#d08770;">{}</span><span>&quot;, guess);
+</span><span>}
+</span></code></pre>
+<h3 id="tables">Tables</h3>
+<table><thead><tr><th>First Header</th><th>Second Header</th></tr></thead><tbody>
+<tr><td>Content from cell 1</td><td>Content from cell 2</td></tr>
+<tr><td>Content in the first column</td><td>Content in the second column</td></tr>
+</tbody></table>
+<h3 id="list-types">List Types</h3>
+<h4 id="ordered-list">Ordered List</h4>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<h4 id="unordered-list">Unordered List</h4>
+<ul>
+<li>List item</li>
+<li>Another item</li>
+<li>And another item
+<ul>
+<li>orange</li>
+<li>apple
+<ul>
+<li>banana</li>
+<li>watermelon</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</p>
+<hr class="mb-4 border-amber-200" />
+
+
+
+
+    </div>
+  </section>
+</body>
+
+<div class="flex justify-end my-4">
+  <div class="flex flex-col">
+    <div><a class="underline text-slate-50" href="/">Tommaso Rosi</a>&ensp;&copy; author name
+    </div>
+    <div>powered by <a class="text-slate-50" href="https://www.getzola.org/">zola</a>, theme <a class="text-slate-50"
+        href="https://github.com/kyoheiu/emily_zola_theme">emily</a></div>
+  </div>
+</div>
+
+</html>
