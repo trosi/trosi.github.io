@@ -5,6 +5,11 @@ on:
   branches:
    - main
 
+env:
+  PAGES_BRANCH: gh-pages
+  OUT_DIR: docs
+  BUILD_ONLY: false
+
 jobs:
   build:
     name: Publish site
